@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">youknewlib</string>
+    <string name="yk_skip">跳过(%ss)</string>
+</resources>

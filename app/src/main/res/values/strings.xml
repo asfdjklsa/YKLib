@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">福彩3D必中助手</string>
+    <string-array name="tab_titles">
+        <!--<item>推荐</item>-->
+        <item>原创</item>
+        <item>竞彩</item>
+        <item>双色球</item>
+        <item>大乐透</item>
+        <item>福彩-3D</item>
+        <item>数字彩</item>
+        <item>高频彩</item>
+        <item>竞足技巧</item>
+        <item>竞篮技巧</item>
+
+    </string-array>
+</resources>
