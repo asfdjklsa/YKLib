@@ -25,7 +25,7 @@ public class Api {
     //禁足技巧
     public static final String url9 = "https://m.qmcai.com/hd/eventStatic/specialVersion/zixunrevision/lanqiu/index.html?categoryId=jzjq&version=5.2.46";
     public static final String url10 = "https://m.qmcai.com/hd/eventStatic/specialVersion/zixunrevision/lanqiu/index.html?categoryId=jljq&version=5.2.46&hideTab=true";
-
+    public static final String trendUrl="http://m.310win.com/chart/ChartIndex.aspx";
     static {
 //        urls.add(url1);
         urls.add(url2);

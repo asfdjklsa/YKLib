@@ -146,11 +146,18 @@ public class YouKnewSplashActivity extends YouKnewBaseActivity implements View.O
     }
 
     private void handleFailed() {
-        if (YouKnewUtil.getVerifyListener() != null) {
-            YouKnewUtil.getVerifyListener().onVerify();
+        setContentView(R.layout.younewlib_splash_verify);
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (YouKnewUtil.getVerifyListener() != null) {
+                    YouKnewUtil.getVerifyListener().onVerify();
 
-        }
-        finish();
+                }
+                finish();
+            }
+        }, 2000);
+
     }
 
     @Override

@@ -12,6 +12,7 @@ public class WebViewActivity extends YouKnewBaseActivity {
     private String url;
     boolean isDestroy = false;
     private com.tencent.smtt.sdk.WebView webview;
+    private long time;
 
     public static void goToWebView(Context context, String url) {
         Intent intent = new Intent(context, WebViewActivity.class);
@@ -22,7 +23,7 @@ public class WebViewActivity extends YouKnewBaseActivity {
     @Override
     public void init() {
         webview = findViewById(R.id.webview);
-        url=getIntent().getStringExtra("url");
+        url = getIntent().getStringExtra("url");
         initWebView();
     }
 
@@ -63,10 +64,16 @@ public class WebViewActivity extends YouKnewBaseActivity {
 
     @Override
     public void onBackPressed() {
-        if(webview.canGoBack()){
+        if (webview.canGoBack()) {
             webview.goBack();
-        }else{
-            finish();
+        } else {
+            long currentTime = System.currentTimeMillis();
+            if (currentTime - time < 1000)
+                finish();
+            else {
+                time = currentTime;
+                toast("再按一次退出应用");
+            }
         }
     }
 }

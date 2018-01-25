@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">福彩3D必中助手</string>
+    <string name="trend">走势</string>
+    <string name="message">资讯</string>
+    <string name="back">返回</string>
     <string-array name="tab_titles">
         <!--<item>推荐</item>-->
         <item>原创</item>

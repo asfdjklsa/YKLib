@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBar">
+        <attr name="left_img" format="reference"></attr>
+        <attr name="right_img" format="reference"/>
+        <attr name="title" format="string"></attr>
+        <attr name="right_title" format="string"></attr>
+        <attr name="left_title" format="string"></attr>
+
+
+        <attr name="title_text_color" format="color"></attr>
+        <attr name="title_font" format="enum|string">
+            <enum name="regular" value="1"/>
+            <enum name="medium" value="2"/>
+            <enum name="bold" value="3"/>
+            <enum name="light" value="4"/>
+
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension"></attr>
+    </declare-styleable>
+
+</resources>

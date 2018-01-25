@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="dark">#7d242430</color>
+    <color name="orangeish">#fa9254</color>
 
 </resources>
